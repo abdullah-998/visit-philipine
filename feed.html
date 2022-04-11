@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel = "icon" href = "./assets/Flag_of_the_Philippines.svg.webp" type = "image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
+    <title>Feed</title>
+</head>
+<body>
+    <div class="main">
+        <div class="feed-container">
+            <div class="image-box">
+                <a href="./index.html">
+                    <img src="./assets/land/dot-logo.png" class="footer__logo">
+                </a>
+            </div>
+            <!-- <span class="name" >Philippine</span> -->
+            <!-- <div class="seperator"></div> -->
+        
+            <div class="input-box">
+                <input type="email" placeholder=" Enter Your Email" class="email-box"><br>
+                <br>
+                <textarea class="text-box">&nbsp;</textarea>
+            </div>
+
+            <!-- <div class="seperator sep-bottom"></div> -->
+            <div class="btn-container">
+                <button class="btn btn--white btn-feed">Send</button>
+            </div>
+            <div class="msg">
+
+            </div>
+        </div>
+    </div>
+    <script>
+        let btn=document.querySelector(".btn-feed");
+
+        //console.log(btn)
+
+        btn.addEventListener('click',()=>{
+            document.querySelector(".msg").innerHTML="Message Sent Successfully...";
+        })
+    </script>
+</body>
+</html>
